@@ -12,7 +12,7 @@ const handler = (request, reply) => {
 
 module.exports = (
   {
-    path: '/evaluate',
+    path: '/upload',
     method: 'POST',
     config: {
       payload: {
