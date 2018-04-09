@@ -1,4 +1,4 @@
-const evaluate = require('./evaluate');
+const upload = require('./upload');
 const predict = require('./predict');
 
-module.exports = [].concat(evaluate, predict);
+module.exports = [].concat(upload, predict);

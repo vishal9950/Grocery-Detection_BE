@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "hapi": "16",
-    "python-shell": "^0.5.0"
+    "python-shell": "^0.5.0",
+    "rimraf": "^2.6.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
