@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hapi": "16"
+    "hapi": "16",
+    "python-shell": "^0.5.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

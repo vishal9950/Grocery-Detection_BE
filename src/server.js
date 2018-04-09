@@ -4,12 +4,13 @@ const Route = require('./route');
 const server = new Hapi.Server();
 
 server.connection({
-    host: 'localhost',
-    port: 8080
+  host: 'localhost',
+  port: 8080,
 });
 
 server.route(Route);
 
-server.start((err) => {
-    console.log('Server started at: ', server.info.uri);
-})
+server.start(() => {
+  console.log('Server started at: ', server.info.uri);
+});
+
