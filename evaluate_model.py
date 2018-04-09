@@ -32,7 +32,7 @@ data_transforms = {
     ]),
 }
 
-data_dir = '/Users/vishalvasnani/Desktop/project'
+data_dir = '/Users/vishalvasnani/Desktop/project' # path to your dataset in train and val folders
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
@@ -98,6 +98,6 @@ def visualize_model(model, num_images=6):
 model_ft_saved = models.resnet18(pretrained=False)
 num_ftrs = model_ft_saved.fc.in_features
 model_ft_saved.fc = nn.Linear(num_ftrs, 25)
-model_ft_saved.load_state_dict(torch.load('/Users/vishalvasnani/Desktop/saved_model'))
+model_ft_saved.load_state_dict(torch.load('/Users/vishalvasnani/Desktop/saved_model')) # path to your saved_model
 
 visualize_model(model_ft_saved)
