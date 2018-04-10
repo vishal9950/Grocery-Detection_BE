@@ -32,7 +32,7 @@ data_transforms = {
     ]),
 }
 
-data_dir = '/Users/vishalvasnani/Desktop/project' # path to your dataset in train and val folders
+data_dir = '/Users/vishalvasnani/CLG/gd_fe/public/project/' # path to your dataset in train and val folders
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                                           data_transforms[x])
                   for x in ['train', 'val']}
